@@ -2,29 +2,241 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#e5dfd4" />
-    <title>Navin Nethmina | IT Undergraduate &amp; Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#141613" />
     <meta
       name="description"
-      content="Portfolio of Navin Nethmina, an Information Technology undergraduate in Kadawatha, Sri Lanka. Explore projects, academic research and experience."
+      content="Portfolio of B.M. Navin Nethmina, an Information Technology undergraduate and developer based in Kadawatha, Sri Lanka."
     />
-    <meta property="og:title" content="Navin Nethmina | IT Undergraduate &amp; Developer" />
+    <meta property="og:title" content="B.M. Navin Nethmina — IT Undergraduate & Developer" />
     <meta
       property="og:description"
-      content="Projects, skills, research and experience of Navin Nethmina, an Information Technology undergraduate."
+      content="Selected projects, academic research, skills, and experience."
     />
     <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" type="image/svg+xml" href="./public/images/favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>B.M. Navin Nethmina — IT Undergraduate &amp; Developer</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Navin Nethmina, home">NN<span>.</span></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#research">Research</a>
+          <a href="#experience">Experience</a>
+          <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Available for opportunities</p>
+          <p class="hero-kicker">IT undergraduate <span>/</span> developer</p>
+          <h1>Thoughtful code.<br /><span>Useful experiences.</span></h1>
+          <p class="hero-intro">
+            I'm <strong>Navin Nethmina</strong>, an Information Technology undergraduate in
+            Kadawatha, Sri Lanka. I build practical web applications and enjoy turning
+            complicated ideas into clear, approachable experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="button button-secondary" href="./public/Navin-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-socials" aria-label="Social profiles">
+            <a href="https://github.com/navinnethmina248" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.75-1.32-3.75-1.32-.5-1.3-1.24-1.65-1.24-1.65-1.01-.7.08-.69.08-.69 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.61 1.2 3.25.92.1-.72.4-1.2.7-1.48-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.43 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.29-2.62 5.23-5.11 5.51.4.35.76 1.03.76 2.08v3.1c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/navin-nethmina-9a3935366" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.45H4.96V9h2.97v9.45ZM6.45 7.71a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12 10.74h-2.97v-4.6c0-1.1-.02-2.52-1.54-2.52-1.55 0-1.79 1.2-1.79 2.44v4.68H9.18V9h2.85v1.29h.04c.4-.74 1.37-1.53 2.82-1.53 3.02 0 3.58 1.99 3.58 4.58v5.11Z"/></svg>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=navinnethmina2001%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5v-13Zm2.4-.5 6.6 5.1L18.6 5H5.4Zm13.6 1.8-6.4 4.94a1 1 0 0 1-1.22 0L5 6.8v11.7c0 .28.22.5.5.5h13a.5.5 0 0 0 .5-.5V6.8Z"/></svg>
+            </a>
+            <span class="social-caption">Find me online</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img src="./public/images/profile.jpeg" alt="Portrait of B.M. Navin Nethmina" />
+          </div>
+          <div class="portrait-label"><span>Based in</span><strong>Kadawatha, Sri Lanka</strong></div>
+          <span class="hero-orbit orbit-one" aria-hidden="true"></span>
+          <span class="hero-orbit orbit-two" aria-hidden="true"></span>
+          <span class="hero-index" aria-hidden="true">01 — 06</span>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">01 / About</p>
+            <h2 class="section-title">Curious mind.<br /><span>Practical builder.</span></h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I’m an Information Technology undergraduate who enjoys the full journey
+              from a rough idea to a polished, useful product. I care about thoughtful
+              interfaces, clear data flow, and software that makes everyday tasks easier.
+            </p>
+            <p>
+              Alongside web development, I work on academic research in AI-powered
+              educational content generation. I’m looking for opportunities to learn,
+              contribute, and grow with a collaborative team.
+            </p>
+            <div class="about-facts">
+              <div><span>Current focus</span><strong>Front-end &amp; full-stack web</strong></div>
+              <div><span>Location</span><strong>Kadawatha, Sri Lanka</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">02 / Selected work</p><h2 class="section-title">Small ideas.<br /><span>Useful applications.</span></h2></div>
+            <p class="section-note">A few projects I built during my development experience.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-featured">
+              <a class="project-image" href="https://github.com/navinnethmina248/DecodeLabs-Internship" target="_blank" rel="noopener noreferrer" aria-label="View To-Do List project source code">
+                <img src="./public/images/projects/project-01.jpg" alt="Illustration preview of the To-Do List application" />
+                <span class="project-number">01</span><span class="project-open" aria-hidden="true">↗</span>
+              </a>
+              <div class="project-content">
+                <p class="project-type">Productivity · Web application</p>
+                <h3>To-Do List</h3>
+                <p>A friendly, straightforward way to organize day-to-day tasks and keep priorities in view.</p>
+                <div class="tag-list"><span>Angular</span><span>TypeScript</span><span>HTML &amp; CSS</span></div>
+                <a class="text-link" href="https://github.com/navinnethmina248/DecodeLabs-Internship" target="_blank" rel="noopener noreferrer">Explore source <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="project-card">
+              <a class="project-image" href="https://github.com/navinnethmina248/DecodeLabs-Internship" target="_blank" rel="noopener noreferrer" aria-label="View Expense Tracker project source code">
+                <img src="./public/images/projects/project-02.jpg" alt="Illustration preview of the Expense Tracker application" loading="lazy" />
+                <span class="project-number">02</span><span class="project-open" aria-hidden="true">↗</span>
+              </a>
+              <div class="project-content">
+                <p class="project-type">Personal finance · Web application</p>
+                <h3>Expense Tracker</h3>
+                <p>Track income and expenses in one place to make more informed financial and investment plans.</p>
+                <div class="tag-list"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span></div>
+                <a class="text-link" href="https://github.com/navinnethmina248/DecodeLabs-Internship" target="_blank" rel="noopener noreferrer">Explore source <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="project-card">
+              <a class="project-image" href="https://github.com/navinnethmina248/DecodeLabs-Internship" target="_blank" rel="noopener noreferrer" aria-label="View General Knowledge Quiz project source code">
+                <img src="./public/images/projects/project-03.jpg" alt="Illustration preview of the General Knowledge Quiz application" loading="lazy" />
+                <span class="project-number">03</span><span class="project-open" aria-hidden="true">↗</span>
+              </a>
+              <div class="project-content">
+                <p class="project-type">Learning · Quiz application</p>
+                <h3>General Knowledge Quiz</h3>
+                <p>Test general knowledge with quizzes that evaluate answers and reward participants for their results.</p>
+                <div class="tag-list"><span>Node.js</span><span>REST API</span><span>SQL</span></div>
+                <a class="text-link" href="https://github.com/navinnethmina248/DecodeLabs-Internship" target="_blank" rel="noopener noreferrer">Explore source <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+          <a class="all-projects" href="https://github.com/navinnethmina248/DecodeLabs-Internship" target="_blank" rel="noopener noreferrer">Browse all projects on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="container skills-layout">
+          <div><p class="eyebrow">03 / Toolkit</p><h2 class="section-title">Tools for<br /><span>the work.</span></h2></div>
+          <div class="skills-grid">
+            <div class="skill-group"><span class="skill-index">01</span><h3>Languages</h3><p>TypeScript, JavaScript, Java, Python, SQL</p></div>
+            <div class="skill-group"><span class="skill-index">02</span><h3>Front-end</h3><p>React, Angular, Tailwind CSS, HTML5, CSS3, Vite</p></div>
+            <div class="skill-group"><span class="skill-index">03</span><h3>Back-end &amp; data</h3><p>Node.js, REST APIs, MySQL, MongoDB</p></div>
+            <div class="skill-group"><span class="skill-index">04</span><h3>Tools &amp; practices</h3><p>Git &amp; GitHub, ESLint, responsive design, Agile / Scrum</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section research-section" id="research">
+        <div class="container research-card">
+          <div class="research-mark" aria-hidden="true">R<span>·</span></div>
+          <div class="research-main">
+            <p class="eyebrow">04 / Academic research</p>
+            <h2>AI-Powered Knowledge Extraction &amp; Content Generation Framework for Educational Videos and Podcasts</h2>
+            <p class="research-summary">
+              My component takes extracted JSON from the first component, fuses the
+              semantic knowledge, and generates summaries, short notes, and quizzes
+              in multiple languages.
+            </p>
+            <div class="research-detail">
+              <span>My contribution</span>
+              <p>
+                Developed the second component for semantic knowledge fusion and
+                multilingual content generation. Built the Python backend, worked
+                with AI models, and trained some models. The wider project uses a
+                React frontend and MongoDB.
+              </p>
+            </div>
+            <div class="tag-list"><span>Python</span><span>AI models</span><span>React</span><span>MongoDB</span><span>Multilingual generation</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience">
+        <div class="container experience-grid">
+          <div><p class="eyebrow">05 / Experience</p><h2 class="section-title">Learning by<br /><span>doing.</span></h2></div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <p class="timeline-period">17 Dec 2025 — 16 Jun 2026</p>
+              <h3>SAP Intern <span>· CBL Corporation</span></h3>
+              <p>Gained practical insight into real-world project processes and business functions across different sections of the organization.</p>
+            </article>
+            <article class="timeline-item">
+              <p class="timeline-period">25 Jul 2026 — 25 Aug 2026</p>
+              <h3>Python Developer <span>· DecodeLabs · Remote</span></h3>
+              <p>Completed three development projects as internship tasks, applying Python development skills to practical work.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container contact-inner">
+          <div>
+            <p class="eyebrow">06 / Contact</p>
+            <h2>Have something<br />in mind? <span>Let’s talk.</span></h2>
+          </div>
+          <div class="contact-action">
+            <p>I’m open to internships and opportunities to contribute to meaningful software projects.</p>
+            <a class="button button-light" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=navinnethmina2001%40gmail.com" target="_blank" rel="noopener noreferrer">Email me <span aria-hidden="true">↗</span></a>
+            <a class="contact-email" href="mailto:navinnethmina2001@gmail.com">navinnethmina2001@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#home">NN<span>.</span></a>
+        <p>Designed and built by Navin Nethmina · <span id="current-year">2026</span></p>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+    <script src="./script.js" defer></script>
   </body>
 </html>

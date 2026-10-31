@@ -1,53 +1,32 @@
-# Navin | Software Engineer Portfolio
+# B.M. Navin Nethmina — Portfolio
 
-A fast, single-page developer portfolio built with **React 18, TypeScript, Vite and Tailwind CSS v4**.
+A responsive personal portfolio built with plain HTML, CSS, and JavaScript. No framework, package installation, or build step is required.
 
-## Quick start
+## Run locally
 
-```bash
-npm install
-npm run dev       # start the dev server
-npm run build     # type-check and build to dist/
-npm run preview   # preview the production build
-npm run lint      # run ESLint
-```
-
-## Make it yours
-
-Everything a recruiter sees is driven by data, so you rarely need to touch components.
-Search the project for `TODO` to find every placeholder.
-
-| What | Where |
-| --- | --- |
-| Name, intro, contact email, social links, about text, research project | `src/data/site.ts` |
-| Projects | `src/data/projects.ts` |
-| Skills | `src/data/skills.ts` |
-| Experience & education | `src/data/experience.ts` |
-| Colours and fonts | `@theme` block in `src/styles/globals.css` |
-
-### Images and CV
-
-- `public/images/profile.jpeg`: your portrait (square works best)
-- `public/images/projects/project-01.jpg` … `project-03.jpg`: project screenshots (16:9 works best)
-- `public/images/favicon.svg`: browser tab icon
-- `public/Navin-CV.pdf`: **replace this placeholder with your real CV**
-
-If an image is missing, the page shows a tidy fallback instead of a broken icon.
+Open `index.html` in a browser.
 
 ## Project structure
 
-```
-src/
-├── components/   reusable UI (Navbar, Button, ProjectCard, ...)
-├── sections/     one file per page section (Hero, About, Skills, ...)
-├── data/         content: site info, projects, skills, experience
-├── hooks/        useScroll: navbar state + active section tracking
-├── styles/       globals.css: Tailwind import and theme tokens
-├── App.tsx
-└── main.tsx
+```text
+index.html                 Page content and metadata
+styles.css                 Layout, colors, and responsive styles
+script.js                  Mobile navigation, scroll effects, active section
+public/
+├── Navin-CV.pdf            Downloadable CV
+└── images/
+    ├── favicon.svg
+    ├── profile.jpeg
+    └── projects/
+        ├── project-01.jpg
+        ├── project-02.jpg
+        └── project-03.jpg
 ```
 
-## Deploying
+## Customize
 
-Any static host works (Vercel, Netlify, Cloudflare Pages, GitHub Pages). Build command: `npm run build`, output directory: `dist`.
-For GitHub Pages under a repo path, set `base: "/your-repo-name/"` in `vite.config.ts`.
+- Update portfolio text, section content, and links in `index.html`.
+- Adjust visual styles and colors near the top of `styles.css`.
+- Replace images and the CV in `public/` while keeping the filenames, or update their paths in `index.html`.
+
+The site can also be hosted as a static website. All local asset links are relative, so it works from a folder or a repository subpath.
